@@ -29,6 +29,11 @@ function assignButtonsAndHours() {
         $("button").eq(i).data("textarea", $("textarea").eq(i));
         // Finally, add an event listener for the save function to each button:
         $("button").eq(i).on("click", save);
+        $("button").eq(i).on("click", function() {
+            $(".save-indicator").slideToggle("slow", function() {
+                $(".save-indicator").slideToggle("slow");
+            });
+        });
         
         // Change the color of each textarea by changing the class, based upon the time of day:
         if (currentHour > $("textarea").eq(i).data("time")) {
@@ -53,6 +58,7 @@ function retrieveStoredTasks() {
         $("textarea").eq(i).text(prevtextarea);
     }
 }
+
 
 let clockOn = true;
 let currentTime;

@@ -88,4 +88,16 @@ textarea{
     border-bottom-right-radius: 15px;
   }
 }
-/* 768px */
+
+.save-indicator {
+  position:fixed;
+  bottom: 0px;
+  display:none;
+  background-color: rebeccapurple;
+  font-size: 2em;
+  padding: 0.2em;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
