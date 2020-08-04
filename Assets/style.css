@@ -93,7 +93,7 @@ textarea{
   position:fixed;
   bottom: 0px;
   display:none;
-  background-color: rebeccapurple;
+  background-color: rgb(118, 83, 153);
   font-size: 2em;
   padding: 0.2em;
   border-top-left-radius: 15px;
