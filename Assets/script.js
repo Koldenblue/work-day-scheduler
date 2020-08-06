@@ -62,7 +62,3 @@ function retrieveStoredTasks() {
         $("textarea").eq(i).text(prevtextarea);
     }
 }
-
-
-// bug: only changes day upon page reload.
-// document ready function $(document).ready(function() {   })
