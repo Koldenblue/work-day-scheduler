@@ -1,6 +1,7 @@
 "use strict"
-
 let currentHour = moment().hour();
+
+$(document).ready(main);
 
 /** Main page controller function, which runs upon loading page. Adds current date to top of page.
  * Adds event listeners to all buttons. Retrieves data from local storage. */
@@ -10,7 +11,6 @@ function main() {
     assignButtonsAndHours();
     retrieveStoredTasks();
 }
-main();
 
 /** Triggered on button click. A function that stores text in the textarea in local storage, 
  * with the local storage key being the "time" data value attached to the clicked button.*/
@@ -64,6 +64,5 @@ function retrieveStoredTasks() {
 }
 
 
-let clockOn = true;
-let currentTime;
 // bug: only changes day upon page reload.
+// document ready function $(document).ready(function() {   })

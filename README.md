@@ -1,2 +1,11 @@
-# work-day-scheduler
-A calendar app that runs in a browser and allows the planning and saving of scheduled events for a workday.
+# Work Day Scheduler
+This project is designed to take advantage of freely available JavaScript libraries as well as the local storage capabilities of modern browsers. JavaScript libraries, such as Moment.js, jQuery, and Bootstrap, provide useful and convenient functionality to programmers. In this small app, these libraries are utilized to present a task scheduler with day and time-related functions. Browser local storage allows the persistence of user data from session to session. Utilizing JavaScript libraries, such as those in this app, does require some learning to get started with. However, they can ultimately save time for developers by providing pre-written codebases for common tasks. 
+
+![image](https://user-images.githubusercontent.com/64618290/89476515-bd79a980-d73f-11ea-8040-17c8e3b55da1.png)
+
+## Scheduler Overview
+The task scheduler program is designed to save user tasks for a simple office workday schedule, from 9AM to 5PM. Users can input tasks into each hour text field, then click the save button so that data will persist through browser sessions. The Moment.js library is used to retrieve the time of day and the date. The day is displayed in the app. The highlighting of tasks changes color, depending on what the current time of day is. The jQuery library is utilized to provide some simple animation. JQuery also improves the functionality, readibility, and ease of writing of the code itself.
+
+This program is fairly simple, so of course there is room for additional functionality. For example, a toggleable clock display could be implemented using Moment.js. The date display at the top also only changes upon page refresh. This could be fixed by utilizing Moment.js to calculate the time until the day change, and using a delayed setInterval() function to change the date at the appropriate time. Further functionality could also be added for the app to keep track of an entire day, rather than just 9AM to 5PM. Even better, the user could enter custom times, which could be saved into local storage and displayed through javaScript. Finally, the app could be improved design-wise, especially through CSS styling and custom art.
+
+Ultimately, this app is fairly simple. Design work could further improve the app interactivity. Though simple, the app accomplishes the goal of providing a useful task-scheduler for an end-user. It also demonstrates the power of JavaScript libraries, and it showcases how local storage promotes browser interactivity.
